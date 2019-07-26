@@ -8,18 +8,58 @@
 	<body class="home">
 		<div class="wrapper">
 			<main>
+				<style type="text/css">
+					#close-popup{
+						display: none;
+						position: absolute;
+						top: 0;
+						right: 0;
+						left: 0;
+						bottom: 0;
+						background: rgba(0, 0, 0, 0.50);
+					}
+					.box{
+						position: relative;
+						display: flex;
+						align-items: center;
+						height: 100vh;
+					}
+					#close-popup .content{
+						position: relative;
+						width: 52%;
+					    height: 40vh;
+					    margin: 0 auto;
+					    border: 2px solid #000;
+					    background: #fff;
+					    text-align: center;
+					}
+					#close-popup .close{
+						position: absolute;
+					    right: -30px;
+					    top: -30px;
+					    background: #fff;
+					    width: 25px;
+					    height: 25px;
+					    display: flex;
+					    align-items: center;
+					    text-align: center;
+					    border-radius: 100%;
+					    font-size: 14px;
+					    justify-content: center;
+					    cursor: pointer;
+					}
+				</style>
 				<div class="container-fluid">
 					<div class="row">
-						<div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 col-12">
-							<?php include'side-menu.php';?>
-						</div>
 						<div class="col-xl-9 col-lg-9 col-md-9 col-sm-8 col-12">
 							<h1 class="m-title">JavaScript Variables</h1>
 							
-							<div id="close-popup" style="display: none;">
-								<div class="close">X</div>
-								<div class="content">
+							<div id="close-popup">
+								<div class="box">
+									<div class="content">
+									<div class="close">X</div>
 									<h2>content here</h2>
+									</div>
 								</div>
 							</div>
 							
