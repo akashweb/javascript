@@ -27,26 +27,26 @@
 					#close-popup .content{
 					position: relative;
 					width: 52%;
-				    height: 40vh;
-				    margin: 0 auto;
-				    border: 2px solid #000;
-				    background: #fff;
-				    text-align: center;
+				        height: 40vh;
+				        margin: 0 auto;
+				        border: 2px solid #000;
+				        background: #fff;
+				        text-align: center;
 					}
 					#close-popup .close{
 					position: absolute;
 					right: -30px;
 					top: -30px;
-					    background: #fff;
-					    width: 25px;
-					    height: 25px;
-					    display: flex;
-					    align-items: center;
-					    text-align: center;
-					    border-radius: 100%;
-					    font-size: 14px;
-					    justify-content: center;
-					    cursor: pointer;
+					background: #fff;
+					width: 25px;
+					height: 25px;
+					display: flex;
+					align-items: center;
+					text-align: center;
+					border-radius: 100%;
+					font-size: 14px;
+					justify-content: center;
+					cursor: pointer;
 					}
 				</style>
 				<div class="container-fluid">
@@ -56,10 +56,10 @@
 							
 							<div id="close-popup">
 								<div class="box">
-									<div class="content">
-									<div class="close">X</div>
-									<h2>content here</h2>
-									</div>
+								<div class="content">
+								<div class="close">X</div>
+								<h2>content here</h2>
+								</div>
 								</div>
 							</div>
 							
@@ -68,11 +68,11 @@
 								var close = document.getElementsByClassName('close')[0];
 								document.addEventListener('mouseleave', function(e){
 									if(e.clientY < 0){
-										model.style.display='block';
+									model.style.display='block';
 									}
 								}, false)
 								close.onclick = function(){
-									model.style.display ='none'
+								model.style.display ='none'
 								}
 							</script>
 						</div>
